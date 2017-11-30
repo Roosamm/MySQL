@@ -6,24 +6,56 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="css/upload.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <nav class="navbar">
+            <div class="container">
+                <div id="navbar-header">
+                    <a id="navbar-home" href="#">TRUNKLY</a>
+                </div>
+                <form id="navbar-form">
+                    <div id="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <div>
+                        <button type="submit" class="search-btn"><i class="fa fa-search "></i></button>
+                    </div>
+                </form>
+                <div class="topnav" id="myTopnav">
+                    <a href="#upload" class="navbar-active"><i class="fa fa-upload"></i></a>
+                    <a href="#home"><i class="fa fa-home"></i></a>
+                    <a href="#random"><i class="fa fa-random"></i></a>
+                    <a href="#profile"><i class="fa fa-user"></i></a>
+                    <a href="javascript:void(0);" class="icon" onclick="burgerFunction()"><i class="fa fa-navicon" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script>
+            function burgerFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
