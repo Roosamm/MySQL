@@ -110,11 +110,12 @@ textarea {
     margin-left: 20px;
     align-self: center;
 }
-#myTopnav {
+#Topnav {
     padding: 0;
     margin: 0;
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-end;
 }
 #navbar-form {
     display: flex;
@@ -133,40 +134,20 @@ textarea {
 }
 .navbar a:hover {
     background-color: #222222;
+    display:block;
 }
 .navbar-active {
+    display: block;
     background-color: #28B463;
 }
 
-.upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    left: 5px;
-}
-.btn {
-    border: 3px solid #F39C12;
-    color: #28B463;
-    background-color: white;
-    padding: 16px 40px;
-    border-radius: 16px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.upload-btn-wrapper input[type=file]{
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
-#upload {
-    padding-left: 20px;
-}
 .topnav .icon {
     display: none;
 }
-
+.topnav a {
+    display: flex;
+    justify-content: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -289,8 +270,11 @@ textarea {
     }
     .topnav.responsive a {
         float: none;
-        display: block;
-        text-align: left;
+        display: flex;
+        text-align: center;
+        width: 18px;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media print {
