@@ -104,18 +104,17 @@ textarea {
 .navbar {
     background-color: #cccccc;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
 #navbar-header {
     margin-left: 20px;
     align-self: center;
 }
-#navbar-ul {
+#myTopnav {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-flow: row;
-    list-style-type: none;
+    flex-flow: row wrap;
 }
 #navbar-form {
     display: flex;
@@ -123,22 +122,49 @@ textarea {
     align-self: center;
 }
 .form-control {
-    width: 250px;
+    width: 100px;
 }
-.navbar li {
-}
-.navbar li a {
+.navbar a {
     display: block;
     color: #555555;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-.navbar li a:hover {
+.navbar a:hover {
     background-color: #222222;
 }
 .navbar-active {
-    background-color: lawngreen;;
+    background-color: #28B463;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    left: 5px;
+}
+.btn {
+    border: 3px solid #F39C12;
+    color: #28B463;
+    background-color: white;
+    padding: 16px 40px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upload-btn-wrapper input[type=file]{
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+#upload {
+    padding-left: 20px;
+}
+.topnav .icon {
+    display: none;
 }
 
 /* ==========================================================================
@@ -247,7 +273,26 @@ textarea {
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 @media print {
     *,
     *:before,

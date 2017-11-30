@@ -6,13 +6,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/upload.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -28,33 +29,35 @@
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <div>
-                        <button type="submit" class="search-btn"></button>
+                        <button type="submit" class="search-btn"><i class="fa fa-search "></i></button>
                     </div>
                 </form>
-                <div class="navbar-collapse">
-                    <ul id="navbar-ul">
-                        <li class="navbar-active"><a href="#">Upload</a></li>
-                        <li class="navbar-c"><a href="#">Home</a></li>
-                        <li class="navbar-c"><a href="#">Random</a></li>
-                        <li class="navbar-c"><a href="#">Profile</a></li>
-                    </ul>
+                <div class="topnav" id="myTopnav">
+                    <a href="#upload" class="navbar-active"><i class="fa fa-upload"></i></a>
+                    <a href="#home"><i class="fa fa-home"></i></a>
+                    <a href="#random"><i class="fa fa-random"></i></a>
+                    <a href="#profile"><i class="fa fa-user"></i></a>
+                    <a href="javascript:void(0);" class="icon" onclick="burgerFunction()"><i class="fa fa-navicon" aria-hidden="true"></i></a>
                 </div>
 
             </div>
         </nav>
         <div id="upload">
             <form action="http://10.114.34.124:8080/upload/fileupload">
-                <h2>Select the file to be uploaded</h2>
-                <input type="file" name="fileup" accept="image/*, video/*, audio/*">
+                <h2>Upload images</h2>
+                <div class="upload-btn-wrapper">
+                    <button class="btn">Select an image</button>
+                    <input type="file" name="fileup" accept="image/*, video/*, audio/*">
+                </div>
                 <br><br><br>
+                <h4>Title</h4>
                 <input type="text" name="title" required>
-                <h3>Title</h3>
                 <br>
+                <h4>Caption</h4>
                 <input type="text" name="caption" required>
-                <h3>Caption</h3>
                 <br>
+                <h4>Tags</h4>
                 <input type="text" name="tag" required>
-                <h3>Tags</h3>
             </form>
         </div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -62,7 +65,16 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script>
+            function burgerFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
