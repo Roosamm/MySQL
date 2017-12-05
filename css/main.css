@@ -102,7 +102,10 @@ textarea {
     justify-content: space-between;
 }
 .navbar {
-    background-color: #cccccc;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #99d066;
     width: 100%;
     overflow: hidden;
 }
@@ -127,20 +130,25 @@ textarea {
 }
 .navbar a {
     display: block;
-    color: #555555;
+    color: #387002;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    align-items: center;
 }
 .navbar a:hover {
-    background-color: #222222;
-    display:block;
+    background-color: #fffd61;
+    display:inherit;
+}
+#navbar-header a:hover {
+    background-color: transparent;
+    display: inherit;
 }
 .navbar-active {
+    justify-content: center;
     display: block;
-    background-color: #28B463;
+    background-color: #689f38;
 }
-
 .topnav .icon {
     display: none;
 }

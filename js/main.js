@@ -5,4 +5,4 @@ const burgerFunction = () => {
     } else {
         x.className = "topnav";
     }
-}
+};
