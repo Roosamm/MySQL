@@ -22,7 +22,7 @@
         <nav class="navbar">
             <div class="container">
                 <div id="navbar-header">
-                    <a id="navbar-home" href="#">TRUNKLY</a>
+                    <a id="navbar-home" href="#"><img src="banner3.png" width="104px" height="26px"></a>
                 </div>
                 <form id="navbar-form">
                     <div id="form-group">
@@ -35,30 +35,34 @@
                 <div class="topnav" id="Topnav">
                     <a href="#upload" class="navbar-active"><i class="fa fa-upload"></i></a>
                     <a href="#home"><i class="fa fa-home"></i></a>
-                    <a href="#random"><i class="fa fa-random"></i></a>
+                    <a href="#facts"><i class="fa fa-lightbulb-o"></i></a>
                     <a href="#profile"><i class="fa fa-user"></i></a>
+                    <a href="#about"><i class="fa fa-at"></i></a>
+                    <a href="#logout"><i class="fa fa-lock"></i></a>
                     <a href="javascript:void(0);" class="icon" onclick="burgerFunction()"><i class="fa fa-navicon" aria-hidden="true"></i></a>
                 </div>
             </div>
         </nav>
-        <div id="upload">
-            <form action="http://10.114.34.124:8080/upload/fileupload">
+        <main id="upload">
+            <form class="form" action="http://10.114.34.124:8080/upload/fileupload">
                 <h2>Upload images</h2>
                 <div class="upload-btn-wrapper">
                     <button class="btn">Select an image</button>
                     <input type="file" name="fileup" accept="image/*, video/*, audio/*">
                 </div>
-                <br><br><br>
+                <br><br>
                 <h4>Title</h4>
-                <input type="text" name="title" required>
+                <input type="text" class="title" name="title" required>
                 <br>
                 <h4>Caption</h4>
-                <input type="text" name="caption" required>
+                <input type="text" class="caption" name="caption" required>
                 <br>
                 <h4>Tags</h4>
-                <input type="text" name="tag" required>
+                <input type="text" class="tag" name="tag" required>
+                <br><br><br>
+                <input type="submit" name="submit">
             </form>
-        </div>
+        </main>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
