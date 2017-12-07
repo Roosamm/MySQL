@@ -156,6 +156,7 @@ textarea {
     display: flex;
     justify-content: center;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -270,19 +271,26 @@ textarea {
     }
 }
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    footer {
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        padding-top: 20px;
+    }
+    .topnav.responsive {
         position: relative;
+    }
+    .topnav.responsive a.icon {
         right: 0;
         top: 0;
     }
     .topnav.responsive a {
         float: none;
         display: flex;
-        text-align: center;
-        width: 18px;
         justify-content: center;
         align-items: center;
+        text-align: left;
+        width: 18px;
     }
 }
 @media print {

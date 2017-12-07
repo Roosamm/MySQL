@@ -6,3 +6,4 @@ const burgerFunction = () => {
         x.className = "topnav";
     }
 };
+document.querySelector('#burger').addEventListener('click', (burgerFunction));
