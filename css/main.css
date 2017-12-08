@@ -177,12 +177,14 @@ textarea {
     color: #8a3ab9;
 }
 footer{
+    background-color: #c79a00;
     text-align: center;
     color: white;
     font-size: 0.9em;
-    margin: 0 auto;
-    max-width: 50%;
-    padding-bottom: 15px;
+    margin: 0;
+    /*max-width: 50%;*/
+    width: 100%;
+    bottom: 0;
 }
 #footer{
     table-layout: fixed;
@@ -193,6 +195,11 @@ footer{
     text-align: center;
     color: white;
     font-size: 0.8em;
+}
+#copyright p{
+    margin:0;
+    border:0;
+    padding:0;
 }
 
 .posts {

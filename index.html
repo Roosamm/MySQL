@@ -9,7 +9,6 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/upload.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -19,7 +18,9 @@
     <nav class="navbar">
         <div class="container">
             <div id="navbar-header">
-                <a id="navbar-home" href="#"><img src="banner5.png" width="104px" height="26px"></a>
+
+                <a id="navbar-home" href="index.html"><img src="banner5.png" width="104px" height="26px"></a>
+
             </div>
             <form id="navbar-form">
                 <div id="form-group">
@@ -30,13 +31,14 @@
                 </div>
             </form>
             <div class="topnav" id="Topnav">
-                <a href="#upload" class="navbar-active"><i class="fa fa-upload"></i></a>
+
+                <a href="index.html" class="navbar-active"><i class="fa fa-home"></i></a>
                 <a href="#" id="burger" class="icon"><i class="fa fa-navicon" aria-hidden="true"></i></a>
-                <a href="#home"><i class="fa fa-home"></i></a>
-                <a href="#facts"><i class="fa fa-lightbulb-o"></i></a>
-                <a href="#profile"><i class="fa fa-user"></i></a>
-                <a href="#about"><i class="fa fa-at"></i></a>
-                <a href="#logout"><i class="fa fa-lock"></i></a>
+                <a href="upload.html"><i class="fa fa-upload"></i></a>
+                <a href="factPage.html"><i class="fa fa-lightbulb-o"></i></a>
+                <a href="mypage.html"><i class="fa fa-user"></i></a>
+                <a href="about.html"><i class="fa fa-at"></i></a>
+                <a href="logout.html"><i class="fa fa-lock"></i></a>
 
             </div>
         </div>
@@ -44,10 +46,9 @@
 
     <div id="home">
         <h2>Welcome</h2>
-
     </div>
 
-    <div class="posts">
+    <main class="posts">
         <div class="grid">
             <div class="image">
                 <a href=""><img src="http://placehold.it/800x800" class="responsive-image"></a>
@@ -68,7 +69,20 @@
                 <a href=""><img src="http://placehold.it/800x800" class="responsive-image"></a>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+            <table id="footer">
+                <tr>
+                    <td>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </td>
+                </tr>
+            </table>
+            <p id="copyright">Copyright &copy; 2017 MySqueal</p>
+    </footer>
+
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
