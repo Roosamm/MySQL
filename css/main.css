@@ -105,12 +105,11 @@ textarea {
     position: fixed;
     top: 0;
     z-index: 1;
-    background-color: #99d066;
+    background-color: #387002;
     width: 100%;
     overflow: hidden;
 }
 #navbar-header {
-    margin-left: 20px;
     align-self: center;
 }
 #Topnav {
@@ -130,7 +129,7 @@ textarea {
 }
 .navbar a {
     display: block;
-    color: #387002;
+    color: #99d066;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
