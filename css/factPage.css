@@ -1,0 +1,37 @@
+html, body {
+    background-color: #689f38;
+    margin: 0;
+}
+
+.factContainer {
+    background-color: ivory;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 54px;
+}
+
+.headline {
+    background-color: #c79a00;
+    color: ivory;
+    padding: 1px 10px;
+    width: 100%;
+}
+
+.article {
+    padding: 1px 12px;
+}
+
+
+/* =============== Media =============== */
+
+@media only screen and (max-width: 600px) {
+    .factContainer {
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        padding-top: 40px;
+    }
+}
+
