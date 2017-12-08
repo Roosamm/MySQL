@@ -16,6 +16,14 @@ html {
     line-height: 1.4;
 }
 
+body {
+    background: #99d066;
+}
+
+h2 {
+    margin: 12px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -129,7 +137,7 @@ textarea {
 }
 .navbar a {
     display: block;
-    color: #99d066;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -157,6 +165,7 @@ textarea {
 }
 
 
+
 /*** footer styles ***/
 .fa-facebook {
     color: #3b5998;
@@ -168,22 +177,45 @@ textarea {
     color: #8a3ab9;
 }
 footer{
+    background-color: #c79a00;
     text-align: center;
     color: white;
     font-size: 0.9em;
-    margin: 0 auto;
-    max-width: 50%;
-    padding-bottom: 15px;
+    margin: 0;
+    /*max-width: 50%;*/
+    width: 100%;
+    bottom: 0;
 }
 #footer{
     table-layout: fixed;
     width: 100%;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     color: white;
     font-size: 0.8em;
+}
+#copyright p{
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+.posts {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    display: flex;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.image {
+    display: block;
+    margin: 1rem;
 }
 
 /* ==========================================================================
@@ -292,6 +324,21 @@ footer{
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+@media screen and (min-width: 600px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .image {
+        width: calc(50% - 2rem);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .image {
+        width: calc(100% / 3 - 2rem);
+    }
+}
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
