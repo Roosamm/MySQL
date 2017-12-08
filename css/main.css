@@ -156,6 +156,36 @@ textarea {
     justify-content: center;
 }
 
+
+/*** footer styles ***/
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #52a1f3;
+}
+.fa-instagram {
+    color: #8a3ab9;
+}
+footer{
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    margin: 0 auto;
+    max-width: 50%;
+    padding-bottom: 15px;
+}
+#footer{
+    table-layout: fixed;
+    width: 100%;
+}
+
+#copyright{
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
