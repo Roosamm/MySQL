@@ -189,10 +189,11 @@ footer{
     width: 100%;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     color: white;
     font-size: 0.8em;
+}
 
 .posts {
     margin: 0 auto;
